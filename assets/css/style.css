@@ -30,7 +30,8 @@ body {
     overflow: hidden;
 }
 
-.carousel-caption {
+
+.carousel-caption-light {
     top: calc(50%);
     transform: translateY(-50%);
     max-width: 520px;
@@ -38,6 +39,18 @@ body {
     position: absolute;
     z-index: 1;
     left: auto;
+    color: #000;
+}
+
+.carousel-caption-dark {
+    top: calc(50%);
+    transform: translateY(-50%);
+    max-width: 520px;
+    text-align: left;
+    position: absolute;
+    z-index: 1;
+    left: auto;
+    color: #fff;
 }
 
 .carousel-control-next, .carousel-control-prev {
@@ -68,6 +81,105 @@ body {
     border-color: #0f760f;
 }
 
+.icons {
+    text-align: center;
+    margin: 28px 0 35px;
+}
+
+.icons a {
+    display: inline-block;
+    margin-right: 4vw;
+}
+
+.icons a p {
+    color: #107c10;
+    text-decoration: underline;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.container {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.hp-mosaic {
+    padding: 6px;
+}
+
+.hp-mosaic li {
+    padding: 2px;
+}
+
+.hp-mosaic li.msctL {
+    float: left;
+    position: relative;
+}
+
+.hp-mosaic li.msctR {
+    float: right;
+    position: relative;
+}
+
+.hp-mosaic li {
+    width: 50%;
+}
+
+.hp-mosaic img {
+    width: 100%;
+}
+
+.f-align-bottom>div {
+    left: 0px;
+    bottom: 7%;
+    padding-left: 3vw;
+    
+}
+
+.x-type-left {
+    position: absolute;
+    margin: 0 auto;
+    text-align: left !important;
+}
+
+.white-c {
+    color: #fff !important;
+}
+
+.floatR {
+    float: right;
+    width: 50%;
+    height: 27.74vw;
+}
+
+#zoomImg1 {
+    background: url(https://compass-ssl.xbox.com/assets/1a/1b/1a1b9cf2-0e65-48d9-9bf5-5a0306832cde.jpg?n=Spring-Sale-2019_Small-tout-1084_SS-XGP_475x534_02.jpg);
+}
+
+.zoom {
+    background-size: 100% 100% !important;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+}
+
+.theme-green {
+    color: #fff;
+    background-color: #107c10 !important;
+    height: 27.74vw;
+}
+
+.m-content-placement-item {
+    float: left;
+    width: 50%;
+    padding: 0 3vw;
+    position: relative;
+    top: calc(50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
 
 footer {
     text-align: center;
@@ -76,4 +188,15 @@ footer {
     color: white;
     font-size: small;
     flex-shrink: 0;
+}
+
+
+
+/* MEDIA QUERIES */
+
+
+@media only screen and (min-width: 1200px) {
+    .container {
+        max-width: unset;
+    }
 }
